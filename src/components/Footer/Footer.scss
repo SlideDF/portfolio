@@ -1,0 +1,11 @@
+footer {
+    font-weight: bold;
+    position: absolute;
+    opacity: 0;
+    bottom: 1rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 999;
+    animation: fadeIn 1s forwards;
+    animation-delay: 3s;
+}

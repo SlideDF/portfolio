@@ -1,0 +1,99 @@
+.App {
+    width: 100%;
+    height: 100%;
+    padding-top: 60px;
+}
+
+.close-section {
+    animation: fadeOutSection .4s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translate(0, -100px);
+    }
+    50% {
+        transform: translate(0,0);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate(0, 100px);
+    }
+    50% {
+        transform: translate(0,0);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInSection {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes fadeOutSection {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+    nav {
+        .container-nav {
+            padding: 10px;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    nav{
+        display: none;
+    }
+
+    .network {
+        display: flex;
+        position: absolute;
+        right: 50%;
+        top: 80%;
+        transform: translate(50%, 0);
+    }
+}
