@@ -3,7 +3,7 @@ import './Footer.css'
 const Footer = () => {
     return (
         <footer>
-            <span>© Portfolio David FEVRE 2023</span>
+            <span>© 2023 Portfolio | David FEVRE</span>
         </footer>
     )
 }

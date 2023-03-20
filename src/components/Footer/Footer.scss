@@ -1,11 +1,13 @@
 footer {
     font-weight: bold;
-    position: absolute;
+    font-size: 12px;
     opacity: 0;
-    bottom: 1rem;
-    left: 50%;
-    transform: translate(-50%, 0);
+    width: 100%;
+    text-align: center;
     z-index: 999;
     animation: fadeIn 1s forwards;
     animation-delay: 3s;
+
+    position: absolute;
+    bottom: 1rem;
 }
