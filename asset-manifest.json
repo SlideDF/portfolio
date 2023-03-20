@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.2e37d005.css",
+    "main.css": "/portfolio/static/css/main.23dc8ee3.css",
     "main.js": "/portfolio/static/js/main.26fdaccc.js",
     "static/media/Image.png": "/portfolio/static/media/Image.72e441db7442caa31826.png",
     "static/media/TTNorms-Light.otf": "/portfolio/static/media/TTNorms-Light.5666b83392be1e75e731.otf",
@@ -11,11 +11,11 @@
     "static/media/logo-linkedin.png": "/portfolio/static/media/logo-linkedin.8ab353497ad67b3958ce.png",
     "static/media/logo.png": "/portfolio/static/media/logo.13d995da40090db13013.png",
     "index.html": "/portfolio/index.html",
-    "main.2e37d005.css.map": "/portfolio/static/css/main.2e37d005.css.map",
+    "main.23dc8ee3.css.map": "/portfolio/static/css/main.23dc8ee3.css.map",
     "main.26fdaccc.js.map": "/portfolio/static/js/main.26fdaccc.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e37d005.css",
+    "static/css/main.23dc8ee3.css",
     "static/js/main.26fdaccc.js"
   ]
 }
