@@ -9,6 +9,12 @@ const NavBar = ({ setOpenPresentation, openPresentation, openPortfolio, setOpenP
         const buttonSkills = document.querySelector('.container-nav button:nth-child(3)')
         const buttonExperience = document.querySelector('.container-nav button:nth-child(4)')
 
+        document.querySelector('nav').classList.add('move-nav')
+        document.querySelector('.container-nav').classList.remove('move-nav-bar')
+        document.querySelector('.menu-icon__cheeckbox').checked = false
+        document.querySelector('.network').classList.add('move-network')
+        document.querySelector('footer').classList.add('move-footer')
+
         switch(value) {
             case 'presentation':
                 if(buttonPortfolio.classList.value.includes('active') || buttonSkills.classList.value.includes('active') || buttonExperience.classList.value.includes('active')) {
@@ -131,30 +137,44 @@ const NavBar = ({ setOpenPresentation, openPresentation, openPortfolio, setOpenP
             <a href='/'>
                 <img className='logo-navbar' src={logo} alt='' />
             </a>
+
+            <div className="menu" onClick={() => {
+                if(document.querySelector('.container-nav').classList.value.includes('move-nav-bar')) {
+
+                    document.querySelector('.container-nav').classList.remove('move-nav-bar')
+                } else {
+                    document.querySelector('.container-nav').classList.add('move-nav-bar')
+                }
+            }}>
+                <div className="menu-icon">
+                    <input className="menu-icon__cheeckbox" type="checkbox" />
+                    <div>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
             <div className='container-nav'>
                 <button className='close-right' onClick={() => {
                     fadeOut('presentation').then(() => {  
                         setOpenPresentation(true)
                     })
-                    document.querySelector('nav').classList.add('open-nav')
                 }}>Présentation</button>
                 <button className='close-right' onClick={() => {
                     fadeOut('portfolio').then(() => {
                         setOpenPortfolio(true)
                     })
-                    document.querySelector('nav').classList.add('open-nav')
                 }}>Portfolio</button>
                 <button className='close-right' onClick={() => {
                     fadeOut('skills').then(() => {
                         setOpenSkills(true)
                     })
-                    document.querySelector('nav').classList.add('open-nav')
                 }}>Compétences</button>
                 <button className='close-left' onClick={() => {
                     fadeOut('experience').then(() => {
                         setOpenExperience(true)
                     })
-                    document.querySelector('nav').classList.add('open-nav')
                 }}>Expérience</button>
             </div>
         </nav>

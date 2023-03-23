@@ -7,17 +7,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 10px;
-    z-index: 998;
+    z-index: 997;
 }
 
 .logo {
     width: 300px;
     height: 400px;
+    margin-left: 20px;
     position: relative;
-    color: var(--te);
+    color: var(--text);
+    user-select: none;
+    cursor: default;
 
     & h1 {
         font-size: 200px;

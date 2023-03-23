@@ -2,9 +2,10 @@ import './Portfolio.css'
 
 const Portfolio = () => {
     return (
-        <div className='portfolio'>
-            <p>portfolio</p>
-        </div>
+        <section className='portfolio'>
+            <h1>Portfolio</h1>
+            <div className='line'></div>
+        </section>
     )
 }
 

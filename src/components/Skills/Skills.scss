@@ -1,13 +1,36 @@
-.skills {
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.branch {
     position: relative;
-    visibility: hidden;
+    list-style-type: none;
+    width: 100%;
+    padding: 5px;
 
-    animation: fadeInSection .8s forwards;
+    &::before {
+        z-index: -1;
+        content: " ";
+        width: 5px;
+        height: 100%;
+        background-color: var(--text);
+        
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0) skew(0deg, -45deg);
+        -webkit-transform: translate(-50%, 0) skew(0deg, -45deg);
+        -ms-transform: translate(-50%, 0) skew(0deg, -45deg);
+    }
+
+    &::after {
+        z-index: -1;
+        content: " ";
+        width: 5px;
+        height: 100%;
+        background-color: var(--text);
+        
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0) skew(0deg, 45deg);
+        -webkit-transform: translate(-50%, 0) skew(0deg, 45deg);
+        -ms-transform: translate(-50%, 0) skew(0deg, 45deg);
+    }
 }

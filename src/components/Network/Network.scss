@@ -1,5 +1,5 @@
 .network {
-    z-index: 999;
+    z-index: 998;
     position: fixed;
     right: 0;
     top: 50%;
@@ -21,24 +21,73 @@
         animation: fadeIn 1s forwards;
         animation-delay: 2.9s;
     }
+
+    .network-logo {
+        list-style-type: none;
+        margin: 20px;
+        padding: 8px;
+        border-radius: 50%;
+        background-color: var(--background);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        & img, a {
+            height: 40px;
+        }
+    
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.5);
+        }
+    }
 }
 
-.network-logo {
-    list-style-type: none;
-    margin: 20px;
-    padding: 8px;
-    border-radius: 50%;
-    background-color: var(--background);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@keyframes moveNetwork {
+    0% {
+        opacity: 1;
+        right: 50%;
+        top: 80%;
+        transform: translate(50%, 0);
+    }
+    40% {
+        opacity: 0;
+    }
+    50% {
+        top: auto;
+        right: auto;
+        left: 10px;
+        bottom: 15px;
+        transform: inherit;
+    }
+    100% {
+        opacity: 1;
+        top: auto;
+        right: auto;
+        left: 10px;
+        bottom: 15px;
+        transform: inherit;
+    }
+}
 
-    & img, a {
-        height: 40px;
+@media screen and (max-width: 1100px) {
+    .network {
+        display: flex;
+        right: 50%;
+        top: 80%;
+        transform: translate(50%, 0);
     }
 
-    &:hover {
-        cursor: pointer;
-        transform: scale(1.5);
+    .move-network {
+        animation: moveNetwork .5s forwards ease-in-out;
+
+        .network-logo {
+            margin: 5px;
+            padding: 0;
+
+            & img, a {
+                height: 25px;
+            }
+        }
     }
 }

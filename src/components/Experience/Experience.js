@@ -2,9 +2,10 @@ import './Experience.css'
 
 const Experience = () => {
     return (
-        <div className='experience'>
-            <p>experience</p>
-        </div>
+        <section className='experience'>
+            <h1>Expériences</h1>
+            <div className='line'></div>
+        </section>
     )
 }
 
