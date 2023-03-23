@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.f3522781.css",
-    "main.js": "/portfolio/static/js/main.c55962ed.js",
+    "main.js": "/portfolio/static/js/main.152c4d04.js",
     "static/media/Image.png": "/portfolio/static/media/Image.72e441db7442caa31826.png",
     "static/media/TTNorms-Light.otf": "/portfolio/static/media/TTNorms-Light.5666b83392be1e75e731.otf",
     "static/media/TTNorms-Regular.otf": "/portfolio/static/media/TTNorms-Regular.be9ab5334998e415ea05.otf",
@@ -19,10 +19,10 @@
     "static/media/js.png": "/portfolio/static/media/js.3dfb665e058d08c99f28.png",
     "index.html": "/portfolio/index.html",
     "main.f3522781.css.map": "/portfolio/static/css/main.f3522781.css.map",
-    "main.c55962ed.js.map": "/portfolio/static/js/main.c55962ed.js.map"
+    "main.152c4d04.js.map": "/portfolio/static/js/main.152c4d04.js.map"
   },
   "entrypoints": [
     "static/css/main.f3522781.css",
-    "static/js/main.c55962ed.js"
+    "static/js/main.152c4d04.js"
   ]
 }
